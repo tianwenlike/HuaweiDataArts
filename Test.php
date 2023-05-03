@@ -1,16 +1,5 @@
-# HuaweiDataArts
+<?php
 
-# 用于华为SDK php DataArts 封装
-
-# 继承方法
-use App\Libraries\huaweisdk\Huawei;
-
-# Huawei.php 填写key secret
-private static $hw_key    = ""; // key
-private static $hw_secret = ""; // secret
-private static $hw_url    = ""; // 地址
-
-# 调用
 namespace App\Controllers\Api\BigScreen;
 
 use App\Controllers\BaseController;
@@ -31,11 +20,14 @@ class Test extends BaseController
         //         "type"  =>1
         //     ]   
         // ];
+        $data = [
+            "url"   => "/test",   // 请求地址
+            "body"  => [     // 请求body 参数
+                "year"  => "2023",
+            ]
+        ];
         $data = Huawei::getData($data);
         var_dump($data);die(); 
     }
 
 }
-
-
-
