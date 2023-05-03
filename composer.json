@@ -1,0 +1,19 @@
+{
+    "name": "twenlike/php-huaweisdk",
+    "description": "Package Huawei PHP SDK",
+    "autoload": {
+        "psr-4": {
+            "Twenlike\\PhpHuaweisdk\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "twenlike",
+            "email": "1097959571@qq.com"
+        }
+    ],
+    "license": "MIT"
+}
