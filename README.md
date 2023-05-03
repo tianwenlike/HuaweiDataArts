@@ -7,9 +7,9 @@
 use App\Libraries\huaweisdk\Huawei;
 ```
 
-# Huawei.php 填写key secret
+# Huawei.php 填写key secret 在控制中心获取
 ```
-private static $hw_key    = ""; // key
+private static $hw_key    = ""; // key 
 private static $hw_secret = ""; // secret
 private static $hw_url    = ""; // 地址
 ```
